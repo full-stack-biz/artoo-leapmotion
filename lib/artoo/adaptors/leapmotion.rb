@@ -11,7 +11,7 @@ module Artoo
       # Creates a connection with device
       # @return [Boolean]
       def connect
-        @leap = Celluloid::WebSocket::Client.new("ws://#{port.host}:#{port.port}/v3.json")
+        @leap = Celluloid::WebSocket::Client.new("ws://#{port.host}:#{port.port}/v6.json")
 
         super
       end
